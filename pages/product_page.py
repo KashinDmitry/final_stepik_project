@@ -25,3 +25,6 @@ class ProductPage(BasePage):
 
     def should_not_be_success_message(self):
         assert self.is_not_element_present(*ProductPageLocators.PRODUCT_ADDED_MESSAGE), "Success message is presented, but should not be"
+
+    def add_to_basket_message_disappears(self):
+        assert self.is_disappeared(*ProductPageLocators.PRODUCT_ADDED_MESSAGE), "'Add to basket' notification isn't disappeared"
