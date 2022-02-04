@@ -10,6 +10,7 @@ class BasePageLocators():
 
 class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    MAIN_PAGE_URL = "http://selenium1py.pythonanywhere.com/"
 
 
 class LoginPageLocators():
